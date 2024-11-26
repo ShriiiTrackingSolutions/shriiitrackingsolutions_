@@ -97,9 +97,10 @@
     }
   
     .defaultPadding {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
+    
     .PopularProducts .container>.row{
       row-gap: 24px;
       justify-content: center;
@@ -195,6 +196,9 @@ font-size: 22px;
   footer ul li {
     margin-bottom: 5px;
   }
+  .list-group .list-group-item:last-child {
+    padding-bottom: 10px;
+}
 
   .ShadeInStyle .container>.row,.NewsAndBlog .container>.row{
     row-gap: 24px;
@@ -278,7 +282,18 @@ font-size: 22px;
 .servicesColums .container>.row{
   row-gap: 40px;
 }
-
+.whatOurClient  .container>.row{
+row-gap: 40px;
+}
+footer .container>.row{
+  gap: 0%;
+} 
+.Historywrap::after{
+  display: none;
+}
+.Historywrap{
+  row-gap: 50px;
+}
  }
 
  @media screen and (max-width: 912px) {
@@ -294,6 +309,9 @@ font-size: 22px;
     width: 158PX;
     text-align: center;
   }
+  footer .container>.row{
+    gap: 60px 40px;
+  } 
   .UShape .therdH {
     font-size: 16px;
   }
@@ -348,8 +366,12 @@ display: none;
 }
 
 .defaultPadding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.updatedWithOurServices::before {
+  clip-path: polygon(0% 0%, 100% 8%, 100% 100%, 0% 100%);
 }
 .Partners {
 padding-top: 0;

@@ -79,7 +79,7 @@ body {
   --green: #17be74;
   --lightGrey: #e8e8e8;
   --BgBlack: #0b0301;
-  --Orange: #f94d1c;
+  --blue: #f94d1c;
   --Bglight: #f7f5f4;
   --BgDark: #0f0f0f;
   --offwhite: #f3f3f3;
@@ -1301,14 +1301,20 @@ footer .navbar-brand {
 footer p {
   margin: 22px 0;
   color: #bbbbbb;
+  text-align: center;
 }
 footer .container>.row{
-  gap: 80px;
+  gap: 8%;
 } 
 footer .fIcons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
+}
+
+.footerLinks a i, .footerLinks address i{
+  margin-right: 4px;
 }
 
 footer > :nth-child(1) a.fa-brands {
@@ -1394,6 +1400,11 @@ footer ul li {
   text-align: center;
 }
 
+.newBanner .secH{
+  color: #ffffff;
+  margin-top: 16px;
+}
+
 .breadcrumb {
   justify-content: center;
   margin-bottom: 0;
@@ -1414,7 +1425,7 @@ footer ul li {
 }
 
 .breadcrumb-item.active {
-  color: var(--Orange);
+  color: var(--blue);
 }
 
 /* InnovativeShading section start  */
@@ -1427,7 +1438,7 @@ footer ul li {
   padding: 40px 55px 75px 50px;
   border-style: solid;
   border-width: 3px 0px 0px 0px;
-  border-color: var(--Orange);
+  border-color: var(--blue);
   border-radius: 0px 0px 130px 130px;
   background-color: #f7f5f4;
 }
@@ -1480,7 +1491,7 @@ svg[role="progressbar"] circle {
   bottom: 0;
   right: 0;
   padding: 30px;
-  background-color: var(--Orange);
+  background-color: var(--blue);
 }
 svg[role="progressbar"] .pie-text-1 {
   font-size: 16px;
@@ -1492,6 +1503,26 @@ svg[role="progressbar"] .pie-text-1 {
   color: #ffffff;
   text-align: center;
 }
+
+.progressBarWrap2 {
+  position: relative;
+  padding: 30px;
+}
+.progressBarWrap2 .percentage2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.progressBarWrap2  svg[role="progressbar"] .pie-text-1 {
+  font-size: 16px;
+  font-weight: 600;
+  fill: #ffffff;
+}
+
 
 .textPart2 {
   padding-left: 70px;
@@ -1509,7 +1540,7 @@ svg[role="progressbar"] .pie-text-1 {
   transition: 0.3s;
 }
 .verticleCard:hover .iconV {
-  background-color: var(--Orange);
+  background-color: var(--blue);
   color: #ffffff;
 }
 
@@ -1517,15 +1548,15 @@ svg[role="progressbar"] .pie-text-1 {
   background-color: #f8f8f8;
 }
 .iconV {
-  width: 80px;
-  height: 80px;
+  height: 100px;
+  width: 100px;
   font-size: 35px;
-  color: #f94d1c;
+  color: var(--blue);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #f94d1c1a;
+  background-color: #1c83f91a;
   border-radius: 50% 50% 50% 50%;
   transition: 0.3s;
 }
@@ -1571,7 +1602,7 @@ background-color: var(--blue);
   padding: 40px 35px;
 }
 .teamMember .member-info:hover {
-  border: 2px solid var(--Orange);
+  border: 2px solid var(--blue);
   background-color: #ffffff;
 }
 .teamMember .member-info a {
@@ -1607,31 +1638,11 @@ background-color: var(--blue);
 .companyHistory .fourthH.styledHeading {
   color: #ffffff;
 }
-
-.companyHistory .owl-dots {
-  text-align: center;
-  padding-top: 15px;
-}
-.companyHistory .owl-dots button.owl-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 15px;
-  display: inline-block;
-  background: #f94d1c26;
-  margin: 0 3px;
-}
-.companyHistory .owl-dots button.owl-dot.active {
-  background-color: var(--Orange);
-}
-.companyHistory .owl-dots button.owl-dot:focus {
-  outline: none;
-}
-
-.companyHistory .owl-stage-outer {
+.companyHistory .Historywrap{
   position: relative;
+  isolation: isolate;
 }
-
-.companyHistory .owl-stage-outer::after {
+.companyHistory .Historywrap::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -1639,29 +1650,6 @@ background-color: var(--blue);
   position: absolute;
   top: 40px;
   z-index: -1;
-}
-
-.companyHistory .owl-nav {
-  position: absolute;
-  right: 0;
-  top: -115px;
-}
-
-.companyHistory .owl-carousel .owl-nav button.owl-prev,
-.companyHistory .owl-carousel .owl-nav button.owl-next {
-  font-size: 35px;
-  width: 65px;
-  height: 65px;
-  background-color: var(--BgDark);
-  transition: 0.3s;
-}
-.companyHistory .owl-carousel .owl-nav button.owl-prev:hover,
-.companyHistory .owl-carousel .owl-nav button.owl-next:hover {
-  background-color: var(--Orange);
-}
-
-.companyHistory .owl-nav .owl-prev {
-  margin-right: 20px;
 }
 
 .history-box {
@@ -1675,7 +1663,7 @@ background-color: var(--blue);
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: var(--Orange);
+  background-color: var(--blue);
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
@@ -1684,6 +1672,7 @@ background-color: var(--blue);
 
 .history-box .description {
   color: #ffffffa6;
+  font-size: 14px;
   margin-bottom: 0;
 }
 .history-box .timeline-content {
@@ -1721,6 +1710,17 @@ background-color: var(--blue);
 }
 /* Company History section End */
 
+/* extra section start  */
+.tickMark .fifthH i{
+margin-right: 10px;
+color: var(--blue);
+font-size: 18px;
+}
+.tickMark p{
+  padding-left: 28px;
+}
+
+
 /* testimonial section video start  */
 .TestimonialVideo {
   background-color: #000000;
@@ -1757,7 +1757,7 @@ background-color: var(--blue);
   padding: 22px;
   height: 70px;
   width: 70px;
-  color: var(--Orange);
+  color: var(--blue);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1818,18 +1818,14 @@ background-color: var(--blue);
 /* testimonial section video end */
 
 /* testimonial content section start */
-.testimonialContent {
-  padding-left: calc((100% - 1320px) / 2);
-  margin-top: -160px;
-}
-.testimonialContent .container-fluid {
-  padding-right: calc(100% - 1320px);
+
+.testimonialContent .container {
   background-color: var(--BgBlack);
 }
 
 #testimonial1 {
   padding: 80px;
-  padding-right: 180px;
+  padding-right: 80px;
   color: #ffffff;
   position: relative;
 }
@@ -1900,6 +1896,9 @@ background-color: var(--blue);
 #testimonial1 .owl-dots button.owl-dot:focus {
   outline: none;
 }
+.Partners.AboutPage0{
+padding: 0 !important;
+}
 .Partners.AboutPage0 .container {
   padding: 80px 12px;
   background-color: transparent;
@@ -1948,7 +1947,7 @@ background-color: var(--blue);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: var(--Orange);
+  color: var(--blue);
   transition: color 0.3s;
 }
 
@@ -1958,7 +1957,7 @@ background-color: var(--blue);
 .ContactForm {
   padding: 60px;
   background-color: var(--offwhite);
-  gap: 40px 40px;
+  gap: 16px 40px;
 }
 .ContactForm input:not(.form-check-input),
 .ContactForm textarea {
@@ -1990,9 +1989,7 @@ background-color: var(--blue);
 .ContactForm button {
   border: none;
 }
-.invalid-feedback {
-  color: var(--Orange);
-}
+
 .ContactForm button:hover:after,
 .ContactForm button:hover:before {
   width: 52%;
@@ -2002,9 +1999,8 @@ background-color: var(--blue);
 .input-group > .form-select {
   padding: 0 0 20px 0;
 }
-.form-control.is-invalid,
-.was-validated .form-control:invalid {
-  border-color: var(--Orange);
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+  box-shadow: none;
 }
 /* Get in Touch section end */
 
@@ -2012,9 +2008,93 @@ background-color: var(--blue);
 
 .mapSection iframe {
   filter: grayscale(100);
+  margin-bottom: -16px;
 }
 
 /* Contact Map Section end */
+
+/****************** 
+***Services Page***  
+*******************/
+.newBanner .Categories{
+  color: var(--blue);
+}
+
+.newBanner .Categories b{
+  color: var(--green);
+}
+
+
+
+
+/* Slider CSS Start  */
+
+.thumbnail_slider {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 580px;
+  overflow: hidden;
+  transition: .2s;
+  border-width: 2px !important;
+  margin: 10px 4px;
+}
+
+.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  box-shadow: 2px 3px 8px #000000a3;
+}
+
+.splide__slide img {
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Slider CSS End  */
+
+.servicesHighlights ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* services discription section start */
+.servicesDiscription .paragrey{
+  font-weight: 600;
+}
+.servicesDiscription{
+  padding-top: 0;
+}
+
+.pointsSection .therdH{
+  margin-top: 40px;
+}
+
+.pointsSection ol li{
+  margin-top: 10px;
+  color: #696687;
+}
+.pointsSection ol li strong{
+font-weight: bolder;
+}
+.pointsSection ol li::marker{
+  color: var(--blue);
+}
+
+
+/* services discription section end */
+
+
 
 /****************** 
 ***Products Page***  
@@ -2028,10 +2108,13 @@ background-color: var(--blue);
   transition: color 0.3s;
 }
 .productCard2 .cardCategories a:hover {
-  color: var(--Orange);
+  color: var(--blue);
 }
 .productCard2 .title.fourthH a {
   color: var(--BgBlack);
+}
+.paragrey{
+  color: var(--grey);
 }
 
 .productCard2 .ImgHoverZoom::before {
@@ -2085,7 +2168,7 @@ background-color: var(--blue);
 }
 
 .productCard2 .PosAbsol:hover {
-  background-color: var(--Orange);
+  background-color: var(--blue);
 }
 
 .productCard2 .ImgHoverZoom:hover .PosAbsol {
@@ -2150,7 +2233,7 @@ background-color: var(--blue);
   height: 70px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: var(--Orange);
+  background-color: var(--blue);
 }
 
 .VideoPlayBtn::before {
@@ -2161,7 +2244,7 @@ background-color: var(--blue);
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  border: 1px solid var(--Orange);
+  border: 1px solid var(--blue);
   -webkit-animation: pulse-border-2 1.5s linear infinite;
   animation: pulse-border-2 1.5s linear infinite;
 }
@@ -2174,7 +2257,7 @@ background-color: var(--blue);
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  border: 1px solid var(--Orange);
+  border: 1px solid var(--blue);
   -webkit-animation: pulse-border 1s linear infinite;
   animation: pulse-border 1s linear infinite;
 }
@@ -2285,7 +2368,7 @@ background-color: var(--blue);
   margin: 4px 0px;
 }
 #generalQue .owl-dots button.owl-dot.active {
-  background-color: var(--Orange);
+  background-color: var(--blue);
 }
 #generalQue .owl-dots button.owl-dot:focus {
   outline: none;
@@ -2402,338 +2485,6 @@ background-color: var(--blue);
   margin-right: auto;
 }
 
-/****************** 
-***Services Page***  
-*******************/
-
-.servicePage0.whoWeAre {
-  background-color: transparent;
-}
-
-.servicePage0 .pie {
-  width: 90px;
-  height: 90px;
-  position: relative;
-  margin: auto;
-}
-.servicePage0 .pie svg {
-  transform: rotate(-90deg);
-}
-.servicePage0 .pie circle {
-  stroke-width: 3.5px;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  transition: stroke-dashoffset 1s ease-out;
-}
-
-.servicePage0 .percentage {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.servicePage0 .CircleIconWrap .circleIcons {
-  font-size: 40px;
-  margin-bottom: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  color: var(--Orange);
-  background-color: #f94d1c1a;
-  border: none;
-  border-radius: 50px 50px 50px 50px;
-  transition: 0.3s;
-}
-
-.servicePage0 .CircleIconWrap:hover .circleIcons {
-  color: #ffffff;
-  background-color: var(--Orange);
-}
-
-.servicePage0 .CircleIconWrap {
-  align-items: initial;
-}
-
-/* <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .progressBarWrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .pie {
-      position: relative;
-      width: 90px;
-      height: 90px;
-    }
-    .pie svg {
-      transform: rotate(-90deg);
-    }
-    .pie circle {
-      stroke-width: 5px;
-      stroke-dasharray: 100;
-      stroke-dashoffset: 100;
-      transition: stroke-dashoffset 1s ease-out;
-    }
-    .pie .percentage {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 18px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="progressBarWrap">
-    <h2 class="fifthH">Success Rate</h2>
-    <div class="pie" data-pie='{"percent": 89}'>
-      <svg viewBox="0 0 36 36">
-        <circle cx="18" cy="18" r="15" stroke="#d2d3d4" fill="none"></circle>
-        <circle cx="18" cy="18" r="15" stroke="#00aaff" fill="none"></circle>
-      </svg>
-      <div class="percentage">0%</div>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const elements = document.querySelectorAll(".pie");
-
-      const config = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.75
-      };
-
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && entry.intersectionRatio > 0.75) {
-            const pie = entry.target;
-            const percent = pie.dataset.pie ? JSON.parse(pie.dataset.pie).percent : 0;
-            const circle = pie.querySelector('circle:nth-child(2)');
-            const radius = circle.r.baseVal.value;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percent / 100) * circumference;
-
-            circle.style.strokeDasharray = `${circumference} ${circumference}`;
-            circle.style.strokeDashoffset = offset;
-
-            const percentageDiv = pie.querySelector('.percentage');
-            let currentPercentage = 0;
-            const interval = setInterval(() => {
-              if (currentPercentage >= percent) {
-                clearInterval(interval);
-              } else {
-                currentPercentage++;
-                percentageDiv.textContent = `${currentPercentage}%`;
-              }
-            }, 10);
-
-            observer.unobserve(entry.target);
-          }
-        });
-      }, config);
-
-      elements.forEach(item => observer.observe(item));
-    });
-  </script>
-</body>
-</html> */
-
-/* popular services section start */
-.styledHeading.centerStyle {
-  display: table;
-  margin-right: auto;
-  margin-left: auto;
-}
-.secH.centerStyle {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.servicePage0.awningsCanopiesCards {
-  padding: 0px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid var(--lightGrey);
-  background-color: transparent;
-}
-.servicePage0.awningsCanopiesCards p {
-  color: var(--grey);
-}
-.servicePage0.awningsCanopiesCards .therdH a {
-  color: var(--BgBlack);
-}
-
-.servicePage0 .circleBtn {
-  background-color: transparent;
-  color: var(--Black);
-  border-radius: 50px 50px 50px 50px;
-  border-bottom: 1px solid var(--lightGrey);
-}
-.CanopiesCardswrap {
-  padding: 50px;
-  background-color: var(--offwhite);
-  row-gap: 30px;
-}
-.servicePage0.awningsCanopiesCards:hover {
-  border-bottom: 1px solid var(--Orange);
-}
-.servicePage0.awningsCanopiesCards:hover .therdH {
-  text-decoration: underline;
-  text-decoration-color: var(--BgBlack);
-}
-.servicePage0.awningsCanopiesCards .iconBox {
-  color: var(--Orange);
-}
-.servicePage0.awningsCanopiesCards:hover .circleBtn {
-  background-color: var(--Orange);
-  color: #ffffff;
-  border-bottom: 1px solid var(--Orange);
-}
-/* popular services section end */
-
-.servicePage0.headingTitleWidget {
-  background-image: linear-gradient(to bottom, #ffffff 50%, #0b0301 50%);
-}
-
-/* Working Process section start  */
-.workingProcess {
-  background-image: url("../image/working-process-pattern-2-1.webp"),
-    linear-gradient(#0b0301, #0b0301);
-  background-position: bottom center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-}
-
-.workingProcess .fourthH.styledHeading {
-  color: #ffffff;
-}
-.workingProcess .secH {
-  color: #ffffff;
-}
-
-.workingProcess .CircleIconWrap {
-  text-align: center;
-}
-
-.workingProcess .CircleIconWrap .fourthH {
-  color: #ffffff;
-}
-.workingProcess .CircleIconWrap p {
-  color: #ffffffa6;
-}
-
-.workingProcess .CircleIconWrap .circleIcons {
-  width: 110px;
-  height: 110px;
-  font-size: 45px;
-  color: var(--BgBlack);
-  background-color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.workingProcess .CircleIconWrap:first-child {
-  margin-top: 50px;
-}
-
-.workingProcess .CircleIconWrap:nth-child(2) {
-  margin-top: 40px;
-}
-
-.workingProcess .CircleIconWrap:nth-child(3) {
-  margin-top: 90px;
-}
-
-.workingProcess .CircleIconWrap:nth-child(4) {
-  margin-top: 87px;
-}
-.CircleIconWrap .circleIcons {
-  position: relative;
-}
-.workingProcessLine {
-  background-image: url("../image/working-process-line-1.webp");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-.circleIcons .badge {
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  width: 40px;
-  height: 40px;
-  font-family: "Red Hat Display";
-  font-size: 16px;
-  font-weight: 700;
-  background-color: var(--Orange);
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.workingProcess .CircleIconWrap:hover .circleIcons {
-  color: #ffffff;
-  background-color: var(--Orange);
-}
-.workingProcess .CircleIconWrap:hover .circleIcons .badge {
-  background-color: #ffffff;
-  color: var(--BgBlack);
-}
-/* Working Process section end  */
-
-.FAQ_section.servicePage0 .textCard {
-  background: linear-gradient(#f3633cb9, #f3633cb9),
-    url("../image/faq-pattern.webp"), linear-gradient(#f94d1c, #f94d1c);
-  background-position: center, center, center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, cover;
-}
-
-.FAQ_section.servicePage0 .btnLarg {
-  background-color: var(--BgDark);
-  transition: 0.3s;
-}
-
-.FAQ_section.servicePage0 .btnLarg::before {
-  background-color: #ffffff;
-}
-.FAQ_section.servicePage0 .btnLarg::after {
-  background-color: #ffffff;
-}
-.FAQ_section.servicePage0 .btnLarg:hover {
-  color: var(--BgDark);
-}
-
-.getConsultations.servicePage0 {
-  padding: 60px 0;
-  background: url("../image/cta-bg-two-1.webp"),
-    linear-gradient(#f3f3f3, #f3f3f3);
-  background-position: bottom center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-}
-
 /************** 
 ***Blog Page***  
 ***************/
@@ -2821,7 +2572,7 @@ background-color: var(--blue);
   transition: 0.3s;
 }
 .recentPosts ul a:hover {
-  color: var(--Orange);
+  color: var(--blue);
   padding-left: 10px;
 }
 
@@ -2864,8 +2615,8 @@ background-color: var(--blue);
 
   .tag-link:hover{
     color: #ffffff;
-    border: 1px solid var(--Orange);
-    background-color: var(--Orange);
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
   }
 
 
@@ -2900,8 +2651,8 @@ background-color: var(--blue);
 }
 .taglinkFill{
   color: #ffffff;
-  background-color: var(--Orange);
-  border: 1px solid var(--Orange);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
  .tag-link.taglinkFill:hover{
   color: var(--BgBlack);
@@ -2920,8 +2671,8 @@ background-color: var(--blue);
 
 .postBottom .taglinkFill{
   color: #ffffff;
-  background-color: var(--Orange);
-  border: 1px solid var(--Orange);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 .postBottom  .tag-link.taglinkFill:hover{
   color: #ffffff;
@@ -2941,7 +2692,7 @@ background-color: var(--blue);
   align-content: center;
   height: 40px;
   width: 40px;
-  background-color: var(--Orange);
+  background-color: var(--blue);
   color: #ffffff;
   border-radius: 50%;
   transition: 0.3s;
@@ -3001,7 +2752,7 @@ transition: 0.3s;
 }
 
 .postThubCard .fourthH a:hover{
-  color: var(--Orange);
+  color: var(--blue);
   }
 
   .readMoreBtn{
@@ -3009,7 +2760,7 @@ transition: 0.3s;
   font-weight: 600;
 }
 .readMoreBtn:hover{
-  color: var(--Orange);
+  color: var(--blue);
 }
 
 
