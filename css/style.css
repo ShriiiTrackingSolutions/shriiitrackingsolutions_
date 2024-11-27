@@ -485,6 +485,9 @@ img {
   right: 0;
   top: 0;
 }
+.offcanvas-body .btnMedium{
+  display: table; margin: auto; margin-top: 40px;
+}
 .btnOffcanvas span:nth-child(4) {
   position: absolute;
   left: 0;
@@ -1362,30 +1365,11 @@ footer ul li {
 }
 .copyrightSection p {
   margin-bottom: 0;
+  text-align: center;
   color: #bbbbbb;
 }
-.copyrightSection ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  list-style: none;
-}
-.copyrightSection ul a {
-  color: #bbbbbb;
-  position: relative;
-}
-.copyrightSection ul a:hover {
-  color: var(--lightGrey);
-}
-.copyrightSection ul li {
-  position: relative;
-  margin-bottom: 12px;
-}
-.copyrightSection .container > .row {
-  justify-content: space-between;
-}
+
+
 
 /************* 
 ***About Us***  
@@ -2031,7 +2015,7 @@ padding: 0 !important;
 
 .thumbnail_slider {
   max-width: 700px;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 
 .splide__slide {
@@ -2067,6 +2051,12 @@ padding: 0 !important;
   flex-direction: column;
   row-gap: 20px;
 }
+.servicesHighlights ul li {
+color: #696687;
+}
+.servicesHighlights ul li::marker{
+  color: var(--blue);
+}
 
 /* services discription section start */
 .servicesDiscription .paragrey{
@@ -2084,12 +2074,23 @@ padding: 0 !important;
   margin-top: 10px;
   color: #696687;
 }
-.pointsSection ol li strong{
-font-weight: bolder;
-}
+
 .pointsSection ol li::marker{
   color: var(--blue);
 }
+
+.pointsSection ul li{
+  margin-top: 10px;
+  color: #696687;
+}
+.pointsSection ul li::marker{
+  color: var(--blue);
+}
+
+.pointsSection ol li strong{
+  font-weight: bolder;
+  color:#5a5870;
+  }
 
 
 /* services discription section end */
@@ -2115,6 +2116,10 @@ font-weight: bolder;
 }
 .paragrey{
   color: var(--grey);
+}
+
+.paragrey strong{
+  color: #5a5870;
 }
 
 .productCard2 .ImgHoverZoom::before {
@@ -2802,4 +2807,53 @@ transition: 0.3s;
 .commentCardWrap{
   row-gap: 30px;
 }
+.cardService{
+  position: relative;
+  padding: 10px;
+  border:  1px solid var(--lightGrey);
+}
+.cardService .btnMedium{
+  display: table;
+  margin: auto;
+  margin-top: -20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.absoAnchor{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cardService p{
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: var(--grey);
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardService:hover .btnMedium{
+  opacity: 1;
+}
+
+.cardService:hover p{
+  opacity: 0;
+}
+
+.pointsSection ol.olStyle li strong{
+  color: var(--Black);
+}
+
+.pointsSection ol.olStyle  ul{
+  list-style: disc;
+}
+
+
+
 

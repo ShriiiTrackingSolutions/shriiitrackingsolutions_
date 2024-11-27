@@ -294,6 +294,13 @@ footer .container>.row{
 .Historywrap{
   row-gap: 50px;
 }
+
+.relatedProducts{
+  row-gap: 24px;
+}
+.productGallery .container>.row{
+  row-gap: 30px;
+}
  }
 
  @media screen and (max-width: 912px) {
