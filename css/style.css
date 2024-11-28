@@ -873,6 +873,24 @@ color: var(--Black);
 .bannerPage1.contactCard .contactContent.differentCard a:hover{
   color: var(--blue);
 }
+
+/* whatsapp fab */
+.fab-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.Call-fab-container{
+  position: fixed;
+  bottom: 110px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 /* banner css end */
 
 /* updated with our services section start */
