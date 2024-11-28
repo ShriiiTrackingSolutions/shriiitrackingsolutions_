@@ -1923,6 +1923,14 @@ padding: 0 !important;
   color: var(--grey);
   font-family: "Manrope";
 }
+.contactContent.differentCard a{
+  color: var(--grey);
+  font-family: "Manrope";
+}
+.contactContent.differentCard p a{
+  display: inline-block;
+  margin-top: 4px;
+}
 .contactIcon {
   height: 40px;
   width: 40px;
