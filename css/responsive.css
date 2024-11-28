@@ -184,6 +184,10 @@
 font-size: 22px;
 }
 
+.careersOptions .container>.row{
+  row-gap: 24px;
+}
+
  }
 
 @media (max-width: 991.98px) { 

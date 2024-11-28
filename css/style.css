@@ -342,6 +342,7 @@ img {
   border: none;
   font-size: 14px;
   padding: 5px 10px;
+  padding-left: 0;
   padding-right: 28px;
   border-bottom: 1px solid var(--lightGrey);
   text-wrap: wrap;
@@ -861,18 +862,15 @@ nav .modal-body .form-control::placeholder {
   padding-bottom: 5px; 
   height: calc(var(--fontSize)*3 + 45px);
 }
-.bannerAnchor{
-  display: inline-block;
-  margin-top: 20px;
-  color: var(--Black); 
-  font-size: 30px; 
-  font-weight: 700;
+
+.bannerPage1.contactCard{
+  margin-top: 24px;
 }
 
-.bannerAnchor i{
-  color: var(--green);
+.bannerPage1.contactCard .contactContent.differentCard a {
+color: var(--Black);
 }
-.bannerAnchor:hover{
+.bannerPage1.contactCard .contactContent.differentCard a:hover{
   color: var(--blue);
 }
 /* banner css end */
@@ -1404,7 +1402,7 @@ footer ul li {
   position: absolute;
   content: "";
   width: 0.25rem;
-  inset: 0.65rem auto 0.65rem 0.5rem ;
+  inset: 0.65rem auto calc(0.65rem + 47.5px) 0.5rem ;
   border-radius: 0.125rem;
   background: var(--gradient);
   transition: transform 300ms ease, inset 300ms ease;
@@ -1413,13 +1411,13 @@ footer ul li {
 
 .notification:hover:after {
   transform: translateX(0.15rem);
-  inset: 0.65rem auto  calc(0.65rem + 47.5px) 0.5rem ;
 }
 
 .notititle {
   color: var(--BgDark);
   padding: 0.65rem 0.25rem 0.4rem 1.25rem;
   font-weight: 500;
+  text-transform: capitalize;
   transition: transform 300ms ease;
   z-index: 5;
 }
@@ -1447,8 +1445,10 @@ footer ul li {
 
 .notification .btnMedium{
   z-index: 5;
-  height: 0px;
-  padding: 0 20px;
+  width: 100%;
+  bottom: -200px;
+  left: 0;
+  padding: 15px 20px;
   text-align: center;
   background-color: var(--BgDark);
   overflow: hidden;
@@ -1456,8 +1456,8 @@ footer ul li {
 }
 
 .notification:hover .btnMedium{
-  height: 47.5px;
-  padding: 15px 20px;
+
+  bottom: 0;
 }
 .notification .btnMedium:hover{
   color: var(--BgDark);
