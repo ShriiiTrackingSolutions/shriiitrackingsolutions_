@@ -1667,33 +1667,103 @@ svg[role="progressbar"] .pie-text-1 {
   justify-content: center;
   align-items: center;
   padding: 25px 40px;
+  row-gap: 34px;
   transition: 0.3s;
 }
 .verticleCard:hover .iconV {
-  background-color: var(--blue);
   color: #ffffff;
 }
+
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wrapper .card{
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span{
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  display: inline-block;
+  padding: 4px;
+  transform: translate(-45%, -45%) scale(1.09);
+}
+
+@media(max-width: 753px){
+ 
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
 
 .verticleCardsWrap .verticleCard:not(:hover) {
   background-color: #f8f8f8;
 }
 .iconV {
-  height: 100px;
-  width: 100px;
   font-size: 35px;
   color: var(--blue);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #1c83f91a;
   border-radius: 50% 50% 50% 50%;
   transition: 0.3s;
 }
 
 .VacrdText {
-  width: calc(100% - 80px);
-  padding-left: 24px;
+  width: 100%;
+  text-align: center;
 }
 .VacrdText p {
   color: var(--grey);
@@ -2157,7 +2227,6 @@ padding: 0 !important;
 /* Contact Map Section start */
 
 .mapSection iframe {
-  filter: grayscale(100);
   margin-bottom: -16px;
 }
 

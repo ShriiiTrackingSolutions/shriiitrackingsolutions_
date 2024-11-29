@@ -473,29 +473,16 @@
             </h3>
             <div class="verticleCardsWrap">
               <div class="verticleCard">
-                <div class="iconV">
-                  <div class="progressBarWrap2">
-                    <div class="pie2" data-pie='{ "percent": 89 }'>
-                      <svg viewBox="0 0 36 36">
-                        <circle
-                          cx="18"
-                          cy="18"
-                          r="15"
-                          stroke="#d2d3d4"
-                          fill="none"
-                        ></circle>
-                        <circle
-                          cx="18"
-                          cy="18"
-                          r="15"
-                          stroke="#ffffff"
-                          fill="none"
-                        ></circle>
-                      </svg>
-                      <div class="percentage2">97%</div>
+                <div class="iconV wrapper">
+                  <div class="card">
+                    <div class="circle Proffe">
+                      <div class="bar"></div>
+                      <div class="box"><span></span></div>
                     </div>
+                    
                   </div>
                 </div>
+
                 <div class="VacrdText">
                   <h2 class="fourthH">Professional Website Development</h2>
                   <p>
@@ -505,9 +492,16 @@
                 </div>
               </div>
               <div class="verticleCard">
-                <div class="iconV">
-                  <i class="fa-solid fa-handshake"></i>
+                <div class="iconV wrapper">
+                  <div class="card">
+                    <div class="circle effecti">
+                      <div class="bar"></div>
+                      <div class="box"><span></span></div>
+                    </div>
+                    
+                  </div>
                 </div>
+
                 <div class="VacrdText">
                   <h2 class="fourthH">
                     Effective Digital Marketing Strategies
@@ -519,8 +513,14 @@
                 </div>
               </div>
               <div class="verticleCard">
-                <div class="iconV">
-                  <i class="fa-solid fa-users-viewfinder"></i>
+                <div class="iconV wrapper">
+                  <div class="card">
+                    <div class="circle ">
+                      <div class="bar"></div>
+                      <div class="box"><span></span></div>
+                    </div>
+                    
+                  </div>
                 </div>
                 <div class="VacrdText">
                   <h2 class="fourthH">Enhanced Online Visibility</h2>
@@ -869,7 +869,7 @@
                 >
               </li>
               <li>
-                <a target="_blank" href="https://maps.app.goo.gl/42nXXU213svQthqs7"
+                <a target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8"
                   ><address>
                     <i class="fa-solid fa-location-dot"></i> A1-22, Akshar
                     Pavilion, Vasna Bhayli Main Rd, Opp. to Rosedale
@@ -895,8 +895,31 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script src="js/script.js"></script>
+
+
+    <script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.76,
+        fill: {gradient: ['#a445b2', '#fa4299']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".Proffe .bar").circleProgress({
+        value: 0.89
+      });
+      $(".effecti .bar").circleProgress({
+        value: 0.75
+      });
+    
+    </script>
+
 
     <script>
       //  Header script
