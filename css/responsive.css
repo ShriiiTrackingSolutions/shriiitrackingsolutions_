@@ -317,12 +317,15 @@ footer .container>.row{
   footer ul a {
     display: table;
     margin: auto;
-    width: 158PX;
+    max-width: 298PX;
     text-align: center;
   }
   footer .container>.row{
     gap: 60px 40px;
   } 
+  .footerLinks {
+    width: 100%;
+  }
   .UShape .therdH {
     font-size: 16px;
   }
