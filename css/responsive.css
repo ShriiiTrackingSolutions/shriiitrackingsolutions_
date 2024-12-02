@@ -573,6 +573,9 @@ transform-origin: bottom right;
 .CommonForm.ContactForm {
   padding: 12px;
 }
+.getInTouch .ContactForm{
+  padding: 24px;
+}
 
 .servicePage0.awningsCanopiesCards {
   padding-bottom: 20px;
