@@ -1387,7 +1387,24 @@ footer ul li {
   text-align: center;
   color: #bbbbbb;
 }
+.copyrightSection .row{
+  justify-content: space-between;
+}
 
+.footerPage{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.footerPage a{
+  font-size: 14px;
+  color: var(--grey);
+  transition: color 0.3s ease-in-out;
+}
+.footerPage a:hover{
+  color: #ffffff;
+}
 
 
 
@@ -2221,6 +2238,35 @@ padding: 0 !important;
 }
 .form-control.is-valid:focus, .was-validated .form-control:valid:focus {
   box-shadow: none;
+}
+
+#contactForm .modal-header {
+  justify-content: center;
+  position: relative;
+}
+#contactForm .modal-header .btn-close {
+  margin: 0 !important;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.option {
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+}
+.portfolio-item,
+.spotlight {
+  border: 2px solid var(--lightPink);
+}
+.option img {
+  width: 50px;
+  height: 50px;
 }
 /* Get in Touch section end */
 

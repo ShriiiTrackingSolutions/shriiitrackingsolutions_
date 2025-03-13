@@ -230,7 +230,6 @@ font-size: 22px;
 .copyrightSection .container>.row{
   justify-content: center;
   text-align: center;
-  flex-wrap: wrap-reverse;
 }
 .copyrightSection ul{
   justify-content: center;
@@ -483,6 +482,11 @@ display: none;
 
 .awningType .listFlex ul {
   flex-basis: 50%;
+}
+
+.footerPage {
+ justify-content: center;
+ text-align: center;
 }
 
  }
