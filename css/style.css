@@ -2269,7 +2269,7 @@ padding: 0 !important;
   height: 50px;
 }
 
-.alert.alert-success.alert-dismissible.fade.show {
+#alertBox .alert.alert-success.alert-dismissible.fade.show {
   position: fixed;
   top: 97px;
   left: 50%;
@@ -2277,9 +2277,53 @@ padding: 0 !important;
   z-index: 1066;
 }
 
-.alert-success {
- background-color: #fff !important;
+#alertBox  .alert-success {
+ background-color: #e3f5ff !important;
+ text-align: center;
 }
+
+#alertBox .alert {
+  width: 400px;
+  min-width: 400px;
+}
+#alertBox  .alert-success.alert-dismissible {
+  padding: 40px;
+}
+
+.successIco{
+  display: table;
+  margin: auto;
+  margin-bottom: 8px;
+}
+.successIco .iconify{
+  font-size: 60px;
+  display: inline-block;
+  color: var(--green);
+  margin-bottom: 30px;
+}
+.sucMessage{
+  display: flex;
+  text-align: left;
+  align-items: center;
+  line-height: 20px;
+  gap: 16px;
+  padding: 16px;
+  background-color: #2a6fdd34;
+  border-radius: 4px;
+}
+.emIcon{
+  font-size: 24px;
+  flex: 0 0 auto;
+  width: auto;
+}
+.sucText{
+  flex: 1 0 0%;
+}
+.dulText{
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
 /* Get in Touch section end */
 
 /* Contact Map Section start */
