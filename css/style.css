@@ -2268,6 +2268,18 @@ padding: 0 !important;
   width: 50px;
   height: 50px;
 }
+
+.alert.alert-success.alert-dismissible.fade.show {
+  position: fixed;
+  top: 97px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1066;
+}
+
+.alert-success {
+ background-color: #fff !important;
+}
 /* Get in Touch section end */
 
 /* Contact Map Section start */
