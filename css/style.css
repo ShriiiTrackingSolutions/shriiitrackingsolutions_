@@ -241,7 +241,7 @@ img {
 }
 
 .navbar-brand {
-  margin-right: 45px;
+  margin-right: 36px;
   width: 10rem;
 }
 
@@ -2303,7 +2303,7 @@ padding: 0 !important;
 
 #alertBox .alert {
   width: 400px;
-  min-width: 400px;
+  max-width: 400px;
 }
 #alertBox  .alert-success.alert-dismissible {
   padding: 40px;

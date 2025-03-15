@@ -432,6 +432,10 @@ display: none;
 .CommonForm.ContactForm {
   padding: 35px;
 }
+#alertBox .alert {
+  width: 100%;
+  max-width: 400px;
+}
 .blogPage0.NewsAndBlog .NewsCard {
   display: flex;
   flex-wrap: wrap;
