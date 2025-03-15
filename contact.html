@@ -814,7 +814,7 @@
     const alertBox = document.getElementById("alertBox"); // Bootstrap alert div
 
     try {
-      const response = await fetch("http://shreebackend-app.up.railway.app", {
+      const response = await fetch("https://shreebackend-app.up.railway.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, website, message }),
