@@ -2225,11 +2225,30 @@ padding: 0 !important;
 }
 .ContactForm button {
   border: none;
+  transform: translate(0,0);
+  transition: transform 0.3s ease-in-out;
 }
 
-.ContactForm button:hover:after,
-.ContactForm button:hover:before {
+.ContactForm button::before,
+.ContactForm button::after{
+  box-shadow: inset 0px 0px 4px #00000000;
+}
+.ContactForm button:after,
+.ContactForm button:before {
+  transition: box-shadow 0.1s ease-in-out,width linear 0.2s;
+  -webkit-transition: box-shadow 0.1s ease-in-out,width linear 0.2s;
+  -o-transition: box-shadow 0.1s ease-in-out,width linear 0.2s;
+}
+.ContactForm button:hover::after,
+.ContactForm button:hover::before {
   width: 52%;
+}
+
+.ContactForm button:active::before {
+  box-shadow: inset 4px 4px 15px #00000044;
+}
+.ContactForm button:active::after{
+  box-shadow: inset -10px 4px 15px #00000044;
 }
 .ContactForm .input-group > .form-control,
 .input-group > .form-floating,
@@ -2271,9 +2290,9 @@ padding: 0 !important;
 
 #alertBox .alert.alert-success.alert-dismissible.fade.show {
   position: fixed;
-  top: 97px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
   z-index: 1066;
 }
 
