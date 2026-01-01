@@ -3210,6 +3210,199 @@ transition: 0.3s;
   list-style: disc;
 }
 
+/* GMB Services Section Styles */
+.gmbServices {
+  background: var(--Bglight);
+}
 
+.gmbIntro {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.gmbIntro + .therdH{
+    margin-bottom: 60px;
+}
+
+.gmbIntroText {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--grey);
+  margin-top: 20px;
+}
+
+/* GMB Cards */
+.gmbCard {
+  background: #fff;
+  padding: 24px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.gmbCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(42, 111, 221, 0.15);
+  border-color: var(--blue);
+}
+
+.gmbCardPopular {
+  border: 2px solid var(--blue);
+  transform: scale(1.04);
+}
+
+.gmbCardPopular:hover {
+  transform: scale(1.04) translateY(-4px);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -15px;
+  text-wrap: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--blue);
+  color: white;
+  padding: 8px 24px;
+  border-radius: 30px;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Manrope";
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Card Header */
+.gmbCardHeader {
+  text-align: center;
+}
+
+.gmbSubtitle {
+  font-size: 14px;
+  color: var(--grey);
+  margin: 8px 0 0;
+}
+
+/* Price Section */
+.gmbPrice {
+  text-align: center;
+  margin: 12px 0;
+  padding: 16px 0;
+  border-top: 2px solid var(--lightGrey);
+  border-bottom: 2px solid var(--lightGrey);
+}
+
+.priceAmount {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--Black);
+  font-family: "Red Hat Display";
+  line-height: 1;
+}
+
+.priceType {
+  display: block;
+  font-size: 16px;
+  color: var(--grey);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.additionalCharge {
+  text-align: center;
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* Description */
+.gmbDescription {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--grey);
+  text-align: center;
+  margin-bottom:0;
+}
+
+/* Features List */
+.gmbFeatures {
+  margin: 25px 0 0;
+  flex-grow: 1;
+}
+
+.gmbFeatures h5 {
+  margin-bottom: 15px;
+  color: var(--Black);
+}
+
+.gmbFeatures ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gmbFeatures ul li {
+  padding: 4px 0;
+  font-size: 15px;
+  color: var(--grey);
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.checkIcon {
+  color: var(--green);
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Button */
+.gmbBtn {
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+  background: var(--offwhite);
+  color: var(--blue);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Manrope";
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  border: 2px solid var(--blue);
+}
+
+.gmbBtn:hover {
+  background: var(--blue);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(42, 111, 221, 0.3);
+}
+
+.gmbBtnPrimary {
+  background: var(--blue);
+  color: white;
+}
+
+.gmbBtnPrimary:hover {
+  background: #1a54c7;
+}
+      
+.gmbCard .btnMedium{
+text-align: center;
+margin-top: 20px;
+}
 
 

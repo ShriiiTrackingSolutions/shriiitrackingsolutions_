@@ -304,6 +304,14 @@ footer .container>.row{
 .productGallery .container>.row{
   row-gap: 30px;
 }
+
+.gmbCardPopular {
+  transform: scale(1);
+}
+
+.gmbCardPopular:hover {
+  transform: translateY(-4px);
+}
  }
 
  @media screen and (max-width: 912px) {
@@ -492,7 +500,13 @@ display: none;
  justify-content: center;
  text-align: center;
 }
+ .priceAmount {
+  font-size: 30px;
+}
 
+.gmbCard {
+  padding: 20px 16px;
+}
  }
 
 @media (max-width: 575.98px) {
