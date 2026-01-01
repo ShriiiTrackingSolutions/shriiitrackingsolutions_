@@ -3404,5 +3404,11 @@ transition: 0.3s;
 text-align: center;
 margin-top: 20px;
 }
+.razorpay-payment-button{
+  margin-top: 16px;
+  display: table !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
