@@ -47,39 +47,7 @@
             >
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Type keyword & Hit Enter"
-                        aria-label="Search"
-                      />
-                      <button class="btn" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
             <button
               class="navbar-toggler"
@@ -222,39 +190,7 @@
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <form class="d-flex" role="search">
-                          <input
-                            class="form-control me-2"
-                            type="search"
-                            placeholder="Type keyword & Hit Enter"
-                            aria-label="Search"
-                          />
-                          <button class="btn" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                          </button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </li>
             </ul>
             <div class="headerRight d-flex">
@@ -362,6 +298,75 @@
       </div>
     </header>
     <!-- header start -->
+
+  <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="d-flex" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Type keyword & Hit Enter"
+                        aria-label="Search"
+                      />
+                      <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+                <!-- <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="d-flex" role="search">
+                          <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Type keyword & Hit Enter"
+                            aria-label="Search"
+                          />
+                          <button class="btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
 
     <!-- banner start -->
     <section id="headBelowContent" class="Banner">
@@ -688,7 +693,7 @@
           </div>
           
           <!-- <a class="btnMedium" href="#"><span>Get Started</span></a> -->
-          <form ><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RyZfN9azdN7eSh" async> </script> </form>
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Rz0AxPAwTxWe3s" async> </script> </form>
         </div>
       </div>
 
@@ -725,7 +730,7 @@
             </ul>
           </div>
           <!-- <a class="btnMedium" href="#"><span>Get Started</span></a> -->
-          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Rya8Uy43uXWDJB" async> </script> </form>
+          <a class="btnMedium" data-bs-toggle="modal" href="#razorPayModal" role="button"><span>Select Options</span></a>
         </div>
       </div>
 
@@ -757,13 +762,110 @@
             </ul>
           </div>
           <!-- <a class="btnMedium" href="#"><span>Get Started</span></a> -->
-          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RyaA4zEcS39aRV" async> </script> </form>
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Rz0ChVklOW3wyg" async> </script> </form>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- GMB Services Section end -->
+
+<div class="modal fade" id="razorPayModal" aria-hidden="true" aria-labelledby="razorPayModalLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="razorPayModalLabel">Existing MSME Certificate</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="gmbCard">
+          <div class="gmbCardHeader">
+            
+            <h4 class="fourthH">New Profile Creation</h4>
+            <p class="gmbSubtitle">Complete Setup from Scratch</p>
+          </div>
+          
+          <div class="gmbPrice">
+            <span class="priceAmount">₹5,000</span>
+            <span class="priceType">One-Time</span>
+          </div>
+          <div class="additionalCharge">
+            If MSME Certificate is available
+          </div>
+          
+          <p class="gmbDescription">
+            Complete GMB profile creation from scratch with proper setup and verification.
+          </p>
+          
+          <div class="gmbFeatures">
+            <h5 class="fifthH">What's Included:</h5>
+            <ul>
+              <li><i class="checkIcon">✓</i> New Google My Business profile creation</li>
+              <li><i class="checkIcon">✓</i> Business verification support</li>
+              <li><i class="checkIcon">✓</i> Category and business details setup</li>
+              <li><i class="checkIcon">✓</i> Listing on Google Search &amp; Google Maps</li>
+            </ul>
+          </div>
+          
+          <!-- <a class="btnMedium" href="#"><span>Get Started</span></a> -->
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RyyfcYXlr6Z6Y8" async> </script> </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+       <p>If MSME Certificate is not available →</p> 
+       
+       <button class="btnMedium" data-bs-target="#razorPayModal2" data-bs-toggle="modal"><span>Other Option <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="razorPayModal2" aria-hidden="true" aria-labelledby="razorPayModalLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="razorPayModalLabel2">If MSME Certificate Not Available</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="gmbCard">
+          <div class="gmbCardHeader">
+            
+            <h4 class="fourthH">New Profile Creation</h4>
+            <p class="gmbSubtitle">Complete Setup from Scratch</p>
+          </div>
+          
+          <div class="gmbPrice">
+            <span class="priceAmount">₹7,000</span>
+            <span class="priceType">One-Time</span>
+          </div>
+          <div class="additionalCharge">
+            If MSME Certificate is <span style="color: red;">Not</span> available
+          </div>
+          
+          <p class="gmbDescription">
+            Complete GMB profile creation from scratch with proper setup and verification.
+          </p>
+          
+          <div class="gmbFeatures">
+            <h5 class="fifthH">What's Included:</h5>
+            <ul>
+              <li><i class="checkIcon">✓</i> New Google My Business profile creation</li>
+              <li><i class="checkIcon">✓</i> Business verification support</li>
+              <li><i class="checkIcon">✓</i> Category and business details setup</li>
+              <li><i class="checkIcon">✓</i> Listing on Google Search &amp; Google Maps</li>
+            </ul>
+          </div>
+          
+          <!-- <a class="btnMedium" href="#"><span>Get Started</span></a> -->
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RyzSZgYU9FEQWZ" async> </script> </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+       <button class="btnMedium" data-bs-target="#razorPayModal" data-bs-toggle="modal"><span><i class="fa-solid fa-arrow-left-long"></i> Go Back </span></button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- companies and Partners Section start -->

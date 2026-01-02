@@ -507,6 +507,36 @@ display: none;
 .gmbCard {
   padding: 20px 16px;
 }
+#razorPayModal .gmbCard,#razorPayModal2 .gmbCard{
+  padding: 16px 10px;
+}
+
+#razorPayModal .gmbPrice,#razorPayModal2 .gmbPrice{
+  margin: 8px 0;
+  padding: 4px 0;
+} 
+#razorPayModal .priceType,#razorPayModal2 .priceType{
+  line-height: 18px;
+  margin-top: 4px;
+}
+#razorPayModal ul li,#razorPayModal2 ul li{
+ line-height: 18px;
+}
+#razorPayModal .gmbFeatures .fifthH,#razorPayModal2 .gmbFeatures .fifthH{
+  margin-bottom: 8px;
+}
+#razorPayModal .gmbFeatures,#razorPayModal2 .gmbFeatures{
+  margin-top: 8px;
+}
+#razorPayModal .additionalCharge,#razorPayModal2 .additionalCharge{
+  margin: 8px 0;
+  padding: 4px;
+  font-size: 10px;
+  line-height: 12px;
+}
+#razorPayModal .priceAmount,#razorPayModal2 .priceAmount{
+  font-size: 24px;
+} 
  }
 
 @media (max-width: 575.98px) {

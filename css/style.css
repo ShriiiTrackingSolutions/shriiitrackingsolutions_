@@ -400,6 +400,7 @@ img {
 
 .btnMedium {
   display: inline-block;
+  border: none;
   padding: 15px 20px;
   background-color: var(--blue);
   color: #ffffff;
@@ -611,29 +612,29 @@ img {
   gap: 30px;
 }
 
-nav .modal-content {
+#exampleModal .modal-content {
   color: #ffffff;
   background-color: transparent;
   background-clip: padding-box;
   border: none;
   border-radius: 0;
 }
-nav .modal-header {
+#exampleModal .modal-header {
   border-bottom: 0;
 }
-nav .modal-header .btn-close {
+#exampleModal .modal-header .btn-close {
   background: url("../image/download.svg");
   width: 8px;
   height: 8px;
 }
-nav .modal-body {
+#exampleModal .modal-body {
   padding-right: 0;
 }
-nav .modal-body .btn[type="submit"] {
+#exampleModal .modal-body .btn[type="submit"] {
   color: #fff;
 }
 
-nav .modal-body .form-control {
+#exampleModal .modal-body .form-control {
   background-color: transparent;
   border: 0;
   border-radius: 0;
@@ -647,10 +648,10 @@ nav .form-control:focus {
 nav .form-control {
   color: #ffffff;
 }
-nav .modal {
+#exampleModal .modal {
   background-color: #000000;
 }
-nav .modal-body .form-control::placeholder {
+#exampleModal .modal-body .form-control::placeholder {
   color: #fff;
 }
 
@@ -668,7 +669,7 @@ nav .modal-body .form-control::placeholder {
   gap: 24px;
 }
 @media (min-width: 576px) {
-  nav .modal-dialog {
+  #exampleModal .modal-dialog {
     max-width: 65%;
   }
 }
@@ -3403,6 +3404,7 @@ transition: 0.3s;
 .gmbCard .btnMedium{
 text-align: center;
 margin-top: 20px;
+align-self: center;
 }
 .razorpay-payment-button{
   margin-top: 16px;
@@ -3411,4 +3413,38 @@ margin-top: 20px;
   margin-right: auto;
 }
 
+.PaymentButton--dark{
+ background-color: var(--blue) !important;
+  border-radius: 0 !important;
+}
+.PaymentButton.svelte-ekc7fv.svelte-ekc7fv:not(.PaymentButton--rzpTheme):not(.PaymentButton--noRzpLogo)::before{
+  display: none;
+}
+
+#razorPayModal .modal-header,#razorPayModal2 .modal-header{
+  padding: 10px;
+}
+#razorPayModal .modal-dialog-centered,#razorPayModal2 .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: unset;
+    max-height: calc(100% - 34px);
+}
+
+#razorPayModal .modal-body,#razorPayModal2 .modal-body{
+padding: 10px;
+}
+
+.btnMedium[data-bs-target="#razorPayModal"] i{
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+#razorPayModal,#razorPayModal2, #exampleModal{
+  z-index: 1057;
+}
+.modal-backdrop{
+  z-index: 1056;
+  opacity: 0.8 !important;
+}
 
