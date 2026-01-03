@@ -79,7 +79,7 @@ body {
   --green: #17be74;
   --lightGrey: #e8e8e8;
   --BgBlack: #0b0301;
-  --blue: #f94d1c;
+  --blue: #2a6fdd;
   --Bglight: #f7f5f4;
   --BgDark: #0f0f0f;
   --offwhite: #f3f3f3;
@@ -1200,9 +1200,7 @@ background-color: #4a4a4a;
 
 
 /* companies and Partners Section start */
-.Partners {
-  padding-bottom: 50px !important;
-}
+
 .Partners .container-fluid {
   max-width: 1620px;
   padding: 80px;
@@ -1329,11 +1327,29 @@ footer p {
 footer .container>.row{
   gap: 8%;
 } 
+
 footer .fIcons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px
+}
+
+footer .fIcons a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--Black);
+    color: #fff;
+    border-radius: 50%;
+    transition: 0.3s
+}
+
+footer .fIcons a:hover {
+    background-color: var(--green)
 }
 
 .footerLinks a i, .footerLinks address i{
@@ -1352,9 +1368,7 @@ footer > :nth-child(1) a.fa-brands {
   border-radius: 50%;
   transition: 0.3s;
 }
-footer .fIcons a:hover {
-  background-color: var(--green);
-}
+
 footer .fourthH {
   color: var(--yellow);
   margin-bottom: 36px;
@@ -1377,6 +1391,7 @@ footer ul li {
 
 
 
+
 /* footer section End */
 
 .copyrightSection {
@@ -1391,6 +1406,8 @@ footer ul li {
 .copyrightSection .row{
   justify-content: space-between;
 }
+
+
 
 .footerPage{
   display: flex;
@@ -3448,3 +3465,36 @@ padding: 10px;
   opacity: 0.8 !important;
 }
 
+.policyContainer hr {
+    margin: 1rem 0;
+    border-top: 1px solid #724f4f;
+    width: 100%;
+    opacity: 1;
+}
+
+.bottomAnchors{
+  display: flex;
+  gap: 8px;
+  text-shadow: 2px 2px 4px #0000004b;
+  margin-bottom: 8px;
+}
+
+.policyIcon{
+  flex: 0 0 auto;
+  width: auto;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.policyAnchor{
+flex: 1 0 0%;
+color: var(--BgBlack);
+transition: color 0.3s ease-in-out;
+}
+.bottomAnchors:hover .policyAnchor{
+color: var(--blue);
+}
+.bottomAnchors:hover .policyIcon{
+color: var(--blue);
+}
+    

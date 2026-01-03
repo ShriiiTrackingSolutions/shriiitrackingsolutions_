@@ -5,7 +5,7 @@
   --green: #17be74;
   --lightGrey: #e8e8e8;
   --BgBlack: #0b0301;
-  --Orange: #f94d1c;
+  --Orange: #2a6fdd;
   --Bglight: #f7f5f4;
   --BgDark: #0f0f0f;
   --offwhite: #f3f3f3;
@@ -125,6 +125,7 @@
 .headerRight .Makeacall {
   display: none !important;
 }
+
 
 .display-3 {
   font-size: 60px;
@@ -394,9 +395,7 @@ display: none;
 .updatedWithOurServices::before {
   clip-path: polygon(0% 0%, 100% 8%, 100% 100%, 0% 100%);
 }
-.Partners {
-padding-top: 0;
-}
+
 .WhyChooseUs .container.defaultPadding {
   padding-top: 332px;
 }
@@ -537,6 +536,10 @@ display: none;
 #razorPayModal .priceAmount,#razorPayModal2 .priceAmount{
   font-size: 24px;
 } 
+
+.Partners .container-fluid {
+  padding: 50px 16px;
+}
  }
 
 @media (max-width: 575.98px) {
